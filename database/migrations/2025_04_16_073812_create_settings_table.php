@@ -14,6 +14,12 @@ return new class extends Migration
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
             $table->string('background_color')->nullable();
+            $table->boolean('toggle')->nullable();
+            $table->string('type')->nullable();
+            $table->string('password')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('age_from')->nullable();
+            $table->string('age_to')->nullable();
             $table->timestamps();
         });
     }
